@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-08T17:35:20Z" name="Default suite" finished-at="2022-05-08T17:37:04Z" duration-ms="104019">
+    <groups>
+    </groups>
+    <test started-at="2022-05-08T17:35:20Z" name="Default test" finished-at="2022-05-08T17:37:04Z" duration-ms="104019">
+      <class name="test_File.NewTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test_File.NewTest@31c7528f]" started-at="2022-05-08T13:35:20Z" name="beforeMethod" finished-at="2022-05-08T13:35:22Z" duration-ms="2326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="signUp()[pri:1, instance:test_File.NewTest@31c7528f]" started-at="2022-05-08T13:35:22Z" name="signUp" finished-at="2022-05-08T13:36:13Z" duration-ms="50935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test_File.NewTest@31c7528f]" started-at="2022-05-08T13:36:13Z" name="afterMethod" finished-at="2022-05-08T13:36:14Z" duration-ms="499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test_File.NewTest@31c7528f]" started-at="2022-05-08T13:36:14Z" name="beforeMethod" finished-at="2022-05-08T13:36:15Z" duration-ms="1794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="emailverify()[pri:2, instance:test_File.NewTest@31c7528f]" started-at="2022-05-08T13:36:15Z" name="emailverify" finished-at="2022-05-08T13:36:30Z" duration-ms="14981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailverify -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test_File.NewTest@31c7528f]" started-at="2022-05-08T13:36:30Z" name="afterMethod" finished-at="2022-05-08T13:36:31Z" duration-ms="1064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test_File.NewTest@31c7528f]" started-at="2022-05-08T13:36:31Z" name="beforeMethod" finished-at="2022-05-08T13:36:33Z" duration-ms="1473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="log()[pri:3, instance:test_File.NewTest@31c7528f]" started-at="2022-05-08T13:36:33Z" name="log" finished-at="2022-05-08T13:37:03Z" duration-ms="29800" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//span[text()='New Project']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-8UAK4O0H', ip: '192.168.0.246', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//span[text()='New Project']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-8UAK4O0H', ip: '192.168.0.246', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at page_File.PageFile.projectDetails(PageFile.java:137)
+	at test_File.NewTest.log(NewTest.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test_File.NewTest@31c7528f]" started-at="2022-05-08T13:37:03Z" name="afterMethod" finished-at="2022-05-08T13:37:04Z" duration-ms="1118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test_File.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
